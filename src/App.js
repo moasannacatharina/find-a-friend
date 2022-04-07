@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -29,10 +29,6 @@ function App() {
         return null;
       });
   };
-
-  useEffect(() => {
-    console.log(userData);
-  }, [userData]);
   return (
     <div className="App">
       <Layout>
