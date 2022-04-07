@@ -16,7 +16,6 @@ const CustomButton = ({ children, onClick }) => {
       variant="contained"
       onClick={onClick}
       sx={{
-        // bgcolor: "secondary.main",
         color: "primary.main",
         borderRadius: "50px",
         my: 5,

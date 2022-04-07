@@ -10,7 +10,6 @@ const theme = createTheme({
     error: { main: "#FF7154" },
     boxShadow: { main: "#ababab", secondary: "#000" },
   },
-  spacing: 8,
 });
 
 export default theme;

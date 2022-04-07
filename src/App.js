@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
 import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 import Layout from "./components/Layout";
 import Button from "./components/Button";
 import UserCard from "./components/UserCard";
 import Loading from "./components/LoadingAnim/Loading";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [userData, setUserData] = useState(null);

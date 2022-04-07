@@ -1,5 +1,4 @@
 import React from "react";
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import styled from "@emotion/styled";
 import theme from "../theme";
@@ -13,6 +12,7 @@ const StyledImage = styled.img`
   margin: 2rem 0 1rem;
   border: 1px solid ${theme.palette.secondary.dark};
 `;
+
 const StyledCard = styled(motion.div)`
   background-color: ${theme.palette.light.main};
   box-shadow: 0px 0px 5px 0px ${theme.palette.boxShadow.secondary};
@@ -30,6 +30,7 @@ const StyledCard = styled(motion.div)`
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 `;
+
 const StyledContactInformation = styled.div`
   width: 100%;
   height: 100%;
@@ -40,10 +41,8 @@ const StyledContactInformation = styled.div`
 
   & > p {
     margin-top: 10px;
-
     font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
     font-style: italic;
     font-size: 1.15rem;
 
@@ -59,7 +58,6 @@ const StyledContactInformation = styled.div`
   }
 
   & > h3 {
-    /* color: ${theme.palette.accent.main}; */
     margin-top: 2rem;
     font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
