@@ -12,6 +12,7 @@ function App() {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  // function to fetch a random user
   const fetchUserData = () => {
     setLoading(true);
     fetch("https://randomuser.me/api/")
@@ -36,9 +37,11 @@ function App() {
         <AnimatePresence>
           {userData && !loading && <UserCard userData={userData} />}
         </AnimatePresence>
-        <Button onClick={fetchUserData}>Click here</Button>
+        <Button onClick={fetchUserData}>{`${
+          error ? "Try again" : "Click here"
+        }`}</Button>
         {error && (
-          <Typography variant="h4" component="h1" sx={{ color: "error.main" }}>
+          <Typography variant="p" component="h3" sx={{ color: "error.main" }}>
             something went wrong :(
           </Typography>
         )}

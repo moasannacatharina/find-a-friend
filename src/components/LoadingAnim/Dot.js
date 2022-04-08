@@ -12,6 +12,7 @@ const StyledDot = styled(motion.span)`
 `;
 
 const Dot = ({ delay }) => {
+  //Loading animation
   const dotVariants = {
     initial: { y: "0%" },
     animate: { y: "100%" },
